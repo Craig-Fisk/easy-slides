@@ -1,0 +1,7 @@
+:root {
+  --code-bg-color: #eee;
+}
+
+code {
+  background: var(--code-bg-color);
+}

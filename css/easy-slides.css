@@ -362,10 +362,6 @@ main {
   height:100vh;
 }
 
-code {
-  background: var(--code-bg-color);
-}
-
 .flex-container {
   display: flex;
 }
@@ -462,14 +458,6 @@ code {
   padding: 0;
 }
 
-.slide--title .tcl-hero {
-  text-align: left;
-}
-
-.slide strong {
-  font-weight: bold;
-}
-
 .controls {
   width: 200px;
   position: absolute;
@@ -491,4 +479,12 @@ code {
 
 .controls__button--right {
   align-self: flex-end;
+}
+
+:root {
+  --code-bg-color: #eee;
+}
+
+code {
+  background: var(--code-bg-color);
 }
