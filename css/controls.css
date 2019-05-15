@@ -1,0 +1,22 @@
+.controls {
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  z-index: 2;
+}
+
+.controls__button--hidden {
+  display: none;
+}
+
+.controls__button--left {
+  align-self: flex-start;
+}
+
+.controls__button--right {
+  align-self: flex-end;
+}

@@ -1,0 +1,63 @@
+:root {
+  --slide-width: 100vw;
+  --slide-height: 100vh;
+  --slide-padding: 3rem;
+  --slide-start-left: 100%;
+  --slide-end-left: 0;
+  --slide-bg-color: #fff;
+}
+
+.slide {
+  width: var(--slide-width);
+  height: var(--slide-height);
+  display: block;
+  box-sizing: border-box;
+
+  padding: var(--slide-padding);
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  position: absolute;
+  top: 0;
+
+  background: var(--slide-bg-color);
+}
+
+.slide--animate {
+  transition-property: left, opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+.slide--hidden {
+  display: none;
+}
+
+.slide--next {
+  display: flex;
+  opacity: 0;
+  left: var(--slide-start-left);
+  z-index: 1;
+}
+
+.slide--first,
+.slide--current {
+  left: var(--slide-end-left);
+  opacity: 1;
+}
+
+.slide--title {
+  text-align: center;
+  padding: 0;
+}
+
+.slide--title .tcl-hero {
+  text-align: left;
+}
+
+.slide strong {
+  font-weight: bold;
+}

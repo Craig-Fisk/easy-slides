@@ -1,0 +1,39 @@
+.flex-container {
+  display: flex;
+}
+
+.column {
+  text-align: center;
+}
+
+.split-50 {
+  width: 50%;
+}
+
+.split-75 {
+  width: 75%;
+}
+
+.split-25 {
+  width: 25%;
+}
+
+.split-60 {
+  width: 60%;
+}
+
+.split-40 {
+  width: 40%;
+}
+
+.split-33 {
+  width: 33.33%;
+}
+
+.split-20 {
+  width: 20%;
+}
+
+.col {
+  margin: 0 1rem;
+}

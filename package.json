@@ -1,0 +1,22 @@
+{
+  "name": "easy-slides",
+  "version": "1.0.0",
+  "description": "Simple web based slide show presentation library",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "postcss css/index.css -o css/easy-slides.css",
+    "build-dev": "postcss -w css/index.css -o css/easy-slides.css",
+    "build": "npm run build-css",
+    "start": "npm run build && http-server -o",
+    "start-dev": "concurrently 'npm run build-dev' 'npm run http-server -o'"
+  },
+  "author": "Craig Fisk <fisk.craig@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "http-server": "^0.11.1",
+    "normalize.css": "^8.0.1",
+    "postcss-cli": "^6.1.2",
+    "postcss-import": "^12.0.1"
+  }
+}

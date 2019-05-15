@@ -1,0 +1,17 @@
+:root {
+  --code-bg-color: #eee;
+}
+
+body {
+  overflow: hidden;
+}
+
+main {
+  position: relative;
+  width: 100vw;
+  height:100vh;
+}
+
+code {
+  background: var(--code-bg-color);
+}
